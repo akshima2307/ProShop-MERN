@@ -1,0 +1,16 @@
+.navbar-collapse {
+  flex-grow: inherit;
+}
+footer {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
