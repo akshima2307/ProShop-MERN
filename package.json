@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node Backend/server",
     "server": "nodemon Backend/server",
@@ -21,7 +22,8 @@
   "homepage": "https://github.com/akshima2307/ProShop-MERN#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
