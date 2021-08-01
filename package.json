@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node Backend/server"
+    "start": "node Backend/server",
+    "server": "nodemon Backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,11 @@
   },
   "homepage": "https://github.com/akshima2307/ProShop-MERN#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
   }
 }
