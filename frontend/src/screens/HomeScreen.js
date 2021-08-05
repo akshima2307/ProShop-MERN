@@ -5,6 +5,9 @@ import Product from "../components/Product";
 
 import { listProduct } from "../actions/productActions";
 
+import Loading from "../components/Loading";
+import Message from "../components/Message";
+
 const HomeScreen = () => {
   const dispatch = useDispatch();
 
@@ -20,9 +23,9 @@ const HomeScreen = () => {
     <>
       <h1>Latest Products</h1>
       {loading ? (
-        <h2>Loading...</h2>
+        <Loading />
       ) : error ? (
-        <h3>{error}</h3>
+        <Message variant="danger">{error}</Message>
       ) : (
         <Row>
           {products.map((product) => (
