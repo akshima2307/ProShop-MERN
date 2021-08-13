@@ -39,7 +39,7 @@ const shippingAddressFromStorage = localStorage.getItem("shippingAddress")
 
 const initialState = {
   cart: {
-    cartItems: cartItemsFromStorage.productList,
+    cartItems: cartItemsFromStorage,
     shippingAddress: shippingAddressFromStorage,
   },
   userLogin: { userInfo: userInfoFromStorage },
