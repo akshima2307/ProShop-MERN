@@ -14,7 +14,7 @@ export const addOrderItems = asyncHandler(async (req, res) => {
     taxPrice,
     shippingPrice,
     totalPrice,
-  } = res.body;
+  } = req.body;
 
   if (orderItems && orderItems.length === 0) {
     res.status(404);
