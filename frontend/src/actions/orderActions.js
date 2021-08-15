@@ -91,7 +91,7 @@ export const payOrder =
           Authorization: `Bearer ${userInfo.token}`,
         },
       };
-      const { data } = await axios.PUT(
+      const { data } = await axios.put(
         `/api/orders/${orderId}/pay`,
         paymentResult,
         config
