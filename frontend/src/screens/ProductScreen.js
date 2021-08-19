@@ -9,7 +9,6 @@ import {
   Card,
   Button,
   Form,
-  Alert,
 } from "react-bootstrap";
 import Rating from "../components/Rating";
 
